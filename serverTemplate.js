@@ -2,6 +2,11 @@ const express = require('express')
 const app = express()
 const path = require('path')
 
+//require express module
+//create express app
+//require database ????
+//configure app (app.set)
+
 //require the todo "database"
 const todoDb = require('./data/todo-db')
 
@@ -10,8 +15,7 @@ app.get('/', (req, res) => {
     res.send("<h1>Hello World!</h1>")
 })
 
-//configure app
-    //specify view engine / templating engine (ex: ejs, handlebars, lodash)
+//configure app (app.set)
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'views'))
 
