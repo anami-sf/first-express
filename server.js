@@ -5,6 +5,10 @@ app.get('/', (req, res) => {
     res.send("<h1>Hello World!</h1>")
 })
 
+app.get('/home', (req, res) => {
+    res.send("<h1>Home Page</h1>")
+})
+
 app.listen(3000, () => {
     console.log("listening on port 3000")
 })
